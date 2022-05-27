@@ -1,0 +1,40 @@
+.grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(90px, auto);
+  grid-gap: 20px;
+  --justify-items: start; /* columns */
+  --align-items: start; /* rows */
+}
+
+.one {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  background-color: rgb(19, 168, 232);
+}
+
+.two {
+  grid-column: 3;
+  grid-row: 1/3;
+  background-color: rgb(7, 96, 126);
+}
+
+.three {
+  grid-column: 2/4;
+  grid-row: 3;
+  background-color: rgb(19, 168, 232);
+}
+
+.four {
+  grid-column: 1;
+  grid-row: 2/4;
+  background-color: rgb(7, 96, 126);
+}
+
+div div {
+  font-size: 20px;
+  padding: 15px 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 80%;
+  border-radius: 5px;
+}
